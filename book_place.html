@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <h1>ABC Restourant</h1>
+       <div class="flex">
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="food-menu.html">Food Menu</a></li>
+                <li><a href="book_place.html">Book table</a></li>
+                <li><a href="/place-Order.html">Place Order</a></li>
+            </ul>
+        </div>
+        <div class="fa">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li ><a href="user.html"><i class="fa-solid fa-user" id="user"></i></a></li>
+            </ul>
+        </div>
+       </div>
+    </nav>
+    <div class="fo">
+       <center>
+        <h1>Restaurant Reservation Form</h1> 
+        <form autocomplete="off">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Name</label><br>
+                    <input type="text" id="name" placeholder="First" required>
+                </td>
+                <td>
+                    <input type="text" id="name" placeholder="Last" required style="margin-top: 30px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email</label><br>
+                    <input type="Email" id="name"required>
+                </td>
+                <td>
+                    <label for="">Phone</label><br>
+                    <input type="number" id="name" placeholder="### ### ###" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Reservation Date</label><br>
+                    <input type="date" id="name" required style="padding: 19px 96px;">
+                </td>
+                <td>
+                    <label for="">Reservation Time</label><br>
+                    <input type="time" id="name" required  style="padding: 19px 118px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">How many person will you be with?</label><br>
+                    <input type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Note</label><br>
+                    <textarea name="note" id="note" cols="89" rows="6" style="margin-left: 30px;"></textarea>
+                </td>
+            </tr>
+        </table>
+        </form>
+       </center>
+    </div>
+</body>
+</html>

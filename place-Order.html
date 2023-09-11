@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <h1>ABC Restourant</h1>
+       <div class="flex">
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="food-menu.html">Food Menu</a></li>
+                <li><a href="book_place.html">Book table</a></li>
+                <li><a href="place-Order.html">Place Order</a></li>
+            </ul>
+        </div>
+        <div class="fa">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="user.html"><i class="fa-solid fa-user" style="color: black;"></i></a></li>
+            </ul>
+        </div>
+       </div>
+    </nav>
+    <section class="b1">
+        
+        <div class="order">
+          <h1>Grand total:$</h1>
+            <div class="holder">
+                <form>
+                   <table>
+                    <tr>
+                        <td colspan="2"><h1>PLACE YOUR ORDER</h1></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name" class="label">your name:</label></td>
+                        <td><label for="mobile"class="label">your number:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="name"  name="name" placeholder="enter your name" required></td>
+                        <td><input type="number" name="mobile" id="mobile" placeholder="enter your number" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email"class="label">your email:</label></td>
+                        <td><label for="pay"class="label">payment method:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="email" name="email" placeholder="enter your email" required></td>
+                        <td><select name="pay" id="pay" value="choose the payment">
+                            <option value=""></option>
+                            <option value="cash">cash on delivery</option>
+                            <option value="">credit card</option>
+                            <option value="">UPI</option>
+                            <option value="">Net Banking</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="add1"class="label">address line 01:</label></td>
+                        <td><label for="add2"class="label">address line 02:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="add1"  placeholder="123 building no. 2" required></td>
+                        <td><input type="text" id="add2"  placeholder="123 building no. 2" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="city"class="label">city:</label></td>
+                        <td><label for="add2"class="label">state:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="city"  placeholder="enter your city" required></td>
+                        <td><input type="text" id="state"  placeholder="enter your state" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country"class="label">country:</label></td>
+                        <td><label for="pin"class="label">pin code:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="country"  placeholder="enter your country" required></td>
+                        <td><input type="text" id="pin"  placeholder="g. 566506" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">PLACE ORDER</button></td>
+                    </tr>
+                   </table>
+                     
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="assets/fontawesome/js/all.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        body .login-page{
+            width: 30%;
+            height: fit-content;
+            background-color: bisque;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            /* padding: 15px ; */
+            border-radius: 20px;
+            box-sizing: border-box; 
+            padding-bottom: 20px;  
+        }
+        body .login-page input{
+            display: block;
+            margin: auto;
+            width: 80%;
+            padding:10px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body .login-page h2{
+            text-align: center;
+        }
+        body .login-page button{
+            display: block;
+            margin: auto;
+            padding: 10px 15px;
+            background-color: rgb(14, 239, 14);
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        body .login-page span{
+            margin-top: 20px;
+        }
+        body .login-page span a{
+            text-decoration: none;
+
+            color: rgb(7, 183, 7);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-page">
+       <form action="" autocomplete="off">
+        <h2>Register NOW</h2>
+        <input type="text" placeholder="enter your name">
+        <input type="email" name="email" id="re" placeholder="enter your email" required>
+        <input type="password" name="pass" id="rp" placeholder="enter your password" required>
+        <input type="password" name="pass" id="rrp" placeholder="Conform your password" required>
+        <button type="submit" onclick="register()" value="submit">Register Now</button>
+        <span>don't have an sccount? <a href="/login.html">Login now</a></span>
+       </form>
+
+    </div>
+    <script src="verifyUser.js"></script>
+</body>
+</html>

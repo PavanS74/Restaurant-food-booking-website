@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        
+        .profile{
+            width: 50%;
+            height: 88vh;
+            margin: auto;
+            border: 2px solid black;
+            padding: 15px;
+            background-color: rgb(199, 215, 229);
+            box-sizing: border-box;
+            /* display: flex;
+            align-items: center;
+            column-gap: 0;
+            flex-direction: column; */
+            
+        }
+        .profile p  {
+           width: 100%;
+           display: flex;
+           justify-content: center;
+        }
+
+        .profile p img{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            border: 10px solid rgb(53, 7, 238);
+        }
+        .profile p label{
+            background-color: rgb(16, 241, 16);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .profile form table{
+            width: 100%;
+        }
+        .profile form table tr td{
+            width: 50%;
+        }
+        .profile form table tr td input {
+            width: 90%;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            padding: 15px 10px;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            box-shadow: none;
+        }
+        .profile form table tr td label  { 
+            font-size: larger;
+            font-weight: bold;
+        }
+        .profile form table tr td button  {
+                width: 94.5%;
+                box-shadow: none;
+                font-weight: bold;
+                font-size: 27px;
+                text-align: center;
+                background-color: rgb(28, 236, 28);
+                color: black;
+                padding: 15px 10px;
+                margin-top: 10px;
+                transition: 0.3s ease;
+                border: none;
+            }
+            #save{
+                background-color: red;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>ABC Restourant</h1>
+       <div class="flex">
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="food-menu.html">Food Menu</a></li>
+                <li><a href="book_place.html">Book table</a></li>
+                <li><a href="/place-Order.html">Place Order</a></li>
+            </ul>
+        </div>
+        <div class="fa">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li ><a href="user.html"><i class="fa-solid fa-user" id="user"></i></a></li>
+            </ul>
+        </div>
+       </div>
+    </nav>
+   <center> <h1>UPDATE PROFILE</h1></center>
+   <div class="profile">
+        
+   
+        <p><img id="output"></p>
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+        <form action="" autocomplete="off">
+            <table>
+                <tr>
+                    <td><label for="name" class="label">user name:</label></td>
+                    <td><label for="pass"class="label">old password:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name" name="name" placeholder="enter your name" required></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="enter your password" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="email"class="label">email:</label></td>
+                    <td><label for="npass"class="label">new password:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email"  name="email" placeholder="enter your email" required></td>
+                    <td><input type="password" name="npass" id="npass" placeholder="enter your number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pfile">update pic:</label></td>
+                    <td><label for="cpass">confirm password:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="file" accept="image/*" name="image" id="pfile" onchange="loadFile(event)"></td>
+                    <td><input type="password" name="cpass" id="cpass" placeholder="enter your number" required></td>
+                </td>
+                </tr>
+                <tr><td ><button type="submit">Update Profile</button></td>
+                <td><button type="submit" id="save">Save</button></td></tr>
+            </table>
+        </form>
+   </div>
+   <script >
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+</body>
+</html>

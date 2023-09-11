@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        body .login-page,body .register-page{
+            width: 30%;
+            height: 40vh;
+            background-color: bisque;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            /* padding: 15px ; */
+            border-radius: 20px;
+            box-sizing: border-box;   
+        }
+        body .register-page{
+            height: 53vh;
+            display: none;
+        }
+        body .login-page input, body .register-page input {
+            display: block;
+            margin: auto;
+            width: 80%;
+            padding:10px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body .login-page h2,body .register-page h2{
+            text-align: center;
+        }
+        body .login-page button,body .register-page button{
+            display: block;
+            margin: auto;
+            padding: 10px 15px;
+            background-color: rgb(14, 239, 14);
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        body .login-page button a,body .register-page button a{
+            text-decoration: none;
+        }
+        body .login-page span,body .register-page  span{
+            margin-top: 20px;     
+        }
+        body .register-page  span{
+            margin-left: 110px;
+        }
+        body .login-page span a,body .register-page span a{
+            text-decoration: none;
+            color: rgb(7, 183, 7);
+        }     
+    </style>
+</head>
+<body>
+    <div class="login-page" id="con1">
+       <form action="" autocomplete="off"+65>
+        <h2>LOGIN NOW</h2>
+        <input type="email" name="email" id="se" placeholder="enter your email" required>
+        <input type="password" name="pass" id="sp" placeholder="enter your password" required>
+        <button type="submit" onclick="login()" value="submit"><a href="index.html">Login Now</a></button>
+        <span>don't have an sccount? <a href="#"id="aa" onclick="display()">register now</a></span>
+       </form>
+    </div>
+    <div class="register-page" id="con2">
+        <form action="" autocomplete="off">
+         <h2>Register NOW</h2>
+         <input type="text" placeholder="enter your name">
+         <input type="email" name="email" id="re" placeholder="enter your email" required>
+         <input type="password" name="pass" id="rp" placeholder="enter your password" required>
+         <input type="password" name="pass" id="rrp" placeholder="Conform your password" required>
+         <button type="submit" onclick="register()" value="submit">Register Now</button>
+         <span>don't have an sccount? <a href="#" id="bb" onclick="display2()">Login now</a></span>  
+        </form>
+     </div> 
+    <script src="verifyUser.js"></script>
+</body>
+</html>
